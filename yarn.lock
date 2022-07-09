@@ -47,7 +47,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@aptosis/faucet@workspace:packages/faucet"
   dependencies:
-    "@movingco/prelude": ^0.1.41
+    "@movingco/prelude": ^0.1.42
     "@saberhq/tsconfig": ^2.0.1
     "@types/bn.js": ^5.1.0
     bn.js: ^5.2.1
@@ -826,11 +826,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@movingco/core@npm:0.1.41":
-  version: 0.1.41
-  resolution: "@movingco/core@npm:0.1.41"
+"@movingco/core@npm:0.1.42":
+  version: 0.1.42
+  resolution: "@movingco/core@npm:0.1.42"
   dependencies:
-    "@movingco/sha3": ^0.1.40
+    "@movingco/sha3": ^0.1.41
     "@saberhq/option-utils": ^1.13.32
     "@ubeswap/token-math": ^5.1.6
     bn.js: ^5.2.1
@@ -840,13 +840,13 @@ __metadata:
   peerDependencies:
     bn.js: ^5.2.0
     jsbi: ^4.3.0
-  checksum: 3972d1b2448d708f58cd24dcfca5f1cb0354906c60e8c8733797002d802c70968d027149c1f271d22e2808cfc2ffbbdfe8c6ac2fc275c6494b74554a3a1e9272
+  checksum: f9d12ae892a09c2da165f9e37909006f8281955c98b38985dc71b2951af247d727892c738e75cb1b6dba99ce32ca54de7cb5524d42afbbac463043d6f1ce5610
   languageName: node
   linkType: hard
 
-"@movingco/idl@npm:^0.1.41":
-  version: 0.1.41
-  resolution: "@movingco/idl@npm:0.1.41"
+"@movingco/idl@npm:^0.1.42":
+  version: 0.1.42
+  resolution: "@movingco/idl@npm:0.1.42"
   dependencies:
     bn.js: ^5.2.1
     tiny-invariant: ^1.2.0
@@ -854,32 +854,32 @@ __metadata:
   peerDependencies:
     bn.js: ^5.2.0
     jsbi: ^4.3.0
-  checksum: 0f44bb134a0eba66c3666b43da60069a7ec7c0c3e127f358e324dcb32c24538a50e5b67f54329d95ccb19660dd30e98e168436c16edfec96dcadccfce1a64065
+  checksum: 3925975c28770f409cbbd09d0699867ce892cd85b9e00c3c9eaa67f0117f09f6d1fc139c6f74d0c6cf0c4c8e78868f855b0bd118609f9375a9d25cf0c08b080a
   languageName: node
   linkType: hard
 
-"@movingco/prelude@npm:^0.1.41":
-  version: 0.1.41
-  resolution: "@movingco/prelude@npm:0.1.41"
+"@movingco/prelude@npm:^0.1.42":
+  version: 0.1.42
+  resolution: "@movingco/prelude@npm:0.1.42"
   dependencies:
-    "@movingco/core": 0.1.41
-    "@movingco/idl": ^0.1.41
+    "@movingco/core": 0.1.42
+    "@movingco/idl": ^0.1.42
     tslib: ^2.4.0
   peerDependencies:
     bn.js: ^5.2.0
     jsbi: ^4.3.0
-  checksum: 9b590c867827418decc2b19e237b5a960576de86db40ca8840099ba99b722d90372a33bf0aad33c6d7423f8b99fa2a72056d780d96f21a12598e37fed5bd4eb7
+  checksum: 930f95c3d5e88a8b97ef1e4848fbed8419db25dffcc4a3811abc404d9f83a94afa81fb574c6563be3402ca6f7465360d96e8fc0f190a39d37d00d2d4d9812411
   languageName: node
   linkType: hard
 
-"@movingco/sha3@npm:^0.1.40":
-  version: 0.1.40
-  resolution: "@movingco/sha3@npm:0.1.40"
+"@movingco/sha3@npm:^0.1.41":
+  version: 0.1.41
+  resolution: "@movingco/sha3@npm:0.1.41"
   dependencies:
     js-sha3: ^0.8.0
     tiny-invariant: ^1.2.0
     tslib: ^2.4.0
-  checksum: 63d1bb9739dea9087ce3c436c5cefb212e54379824d7524b09bfffe88954f3684d303642a1ce981613559b2f59be5135371f692278124e85dafe8489fc33e85d
+  checksum: b31274c71ff024d56e81460d792a4d162c92b4371eaf32ba96b0a894dcc537c2d3f58927b6358331610b9def827be0e89c05078e3851bec67f562be4a88c1823
   languageName: node
   linkType: hard
 

@@ -3,17 +3,17 @@
  *
  * @module
  */
-import * as p from "@movingco/prelude";
+import type * as p from "@movingco/prelude";
 
 /** Faucet configuration. */
 export type FaucetConfigurationData = {
   /** Signer capability of the Faucet address. */
   signer_cap: {
-    account: p.HexStringArg;
+    account: p.RawAddress;
   };
 
   /** Address which will become the Mint Wrapper Minter. */
-  minter: p.HexStringArg;
+  minter: p.RawAddress;
 };
 
 /**
@@ -22,7 +22,7 @@ export type FaucetConfigurationData = {
 export type InitializePayload = {
   args: {
     /** IDL type: `Address` */
-    minter: p.HexStringArg;
+    minter: p.RawAddress;
   };
 };
 
@@ -34,7 +34,7 @@ export const entrypoints = {
     function:
       "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet::initialize",
     type_arguments: [],
-    arguments: [p.serializers.hexString(args.minter)],
+    arguments: [args.minter],
   }),
 } as const;
 
