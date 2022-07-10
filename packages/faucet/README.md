@@ -1,4 +1,4 @@
-# `@aptosis/faucet-sdk`
+# `@aptosis/faucet`
 
 TypeScript SDK for the Aptosis faucet.
 
