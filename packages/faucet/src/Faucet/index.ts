@@ -31,15 +31,20 @@ export type InitializePayload = {
 export * as entry from "./entry.js";
 export { idl } from "./idl.js";
 
+/** The address of the module. */
+export const ADDRESS =
+  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98" as const;
+/** The full module name. */
+export const FULL_NAME =
+  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet" as const;
+/** The name of the module. */
+export const NAME = "Faucet" as const;
+
 /** Module ID information. */
 export const id = {
-  /** The address of the module. */
-  ADDRESS: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98",
-  /** The full module name. */
-  FULL_NAME:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet",
-  /** The name of the module. */
-  NAME: "Faucet",
+  ADDRESS,
+  FULL_NAME,
+  NAME,
 } as const;
 
 /** Module error codes. */

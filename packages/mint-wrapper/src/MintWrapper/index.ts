@@ -57,15 +57,20 @@ export type OwnerData<_CoinType = unknown> = {
 
 export { idl } from "./idl.js";
 
+/** The address of the module. */
+export const ADDRESS =
+  "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c" as const;
+/** The full module name. */
+export const FULL_NAME =
+  "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper" as const;
+/** The name of the module. */
+export const NAME = "MintWrapper" as const;
+
 /** Module ID information. */
 export const id = {
-  /** The address of the module. */
-  ADDRESS: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c",
-  /** The full module name. */
-  FULL_NAME:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper",
-  /** The name of the module. */
-  NAME: "MintWrapper",
+  ADDRESS,
+  FULL_NAME,
+  NAME,
 } as const;
 
 export * as errors from "./errors.js";
