@@ -1,2 +1,2 @@
-export * as DevCoinModule from "./DevCoin.js";
-export * as FaucetModule from "./Faucet.js";
+export * as DevCoinModule from "./DevCoin/index.js";
+export * as FaucetModule from "./Faucet/index.js";

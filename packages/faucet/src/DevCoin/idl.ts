@@ -1,0 +1,292 @@
+/**
+ * The IDL of the module.
+ *
+ * @module
+ */
+/** The IDL of the module. */
+export const idl = {
+  module_id:
+    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin",
+  doc: "Coins used for devnet.",
+  functions: [
+    {
+      name: "init_avax",
+      doc: "Initializes the AVAX token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_avery",
+      doc: "Initializes the AVERY token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_bamba",
+      doc: "Initializes the BAMBA token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_baum",
+      doc: "Initializes the BAUM token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_btc",
+      doc: "Initializes the BTC token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_ching",
+      doc: "Initializes the CHING token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_dat",
+      doc: "Initializes the DAT token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_eth",
+      doc: "Initializes the ETH token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_far",
+      doc: "Initializes the FAR token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_jain",
+      doc: "Initializes the JAIN token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_knv",
+      doc: "Initializes the KNV token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_ksam",
+      doc: "Initializes the KSAM token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_mo",
+      doc: "Initializes the MO token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_near",
+      doc: "Initializes the NEAR token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_sbf",
+      doc: "Initializes the SBF token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_sbr",
+      doc: "Initializes the SBR token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_shake",
+      doc: "Initializes the SHAKE token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_sham",
+      doc: "Initializes the SHAM token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_sol",
+      doc: "Initializes the SOL token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_ting",
+      doc: "Initializes the TING token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_usdc",
+      doc: "Initializes the USDC token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_usdt",
+      doc: "Initializes the USDT token.",
+      ty_args: [],
+      args: [],
+    },
+    {
+      name: "init_wsui",
+      doc: "Initializes the WSUI token.",
+      ty_args: [],
+      args: [],
+    },
+  ],
+  structs: [
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::AVAX",
+      doc: "CoinType of Avalanche.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::AVERY",
+      doc: "CoinType of Avery Dennison Corp Class A Shares.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::BAMBA",
+      doc: "CoinType of Bamba Rewards.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::BAUM",
+      doc: "CoinType of Ebaumsworld.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::BTC",
+      doc: "CoinType of Bitcoin.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::CHING",
+      doc: "CoinType of Ching Cash.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::DAT",
+      doc: "CoinType of Datum Shares.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::ETH",
+      doc: "CoinType of Ether.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::FAR",
+      doc: "CoinType of Far Protocol.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::JAIN",
+      doc: "CoinType of Jain Street DAO.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::KNV",
+      doc: "CoinType of Kanav Korean Holdings.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::KSAM",
+      doc: "CoinType of Kysama Protocol Token.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::MO",
+      doc: "CoinType of Morimoto Restaurant Group.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::NEAR",
+      doc: "CoinType of Near Protocol.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SBF",
+      doc: "CoinType of Salaam Bankorus Freud.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SBR",
+      doc: "CoinType of Saber Protocol Token.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SHAKE",
+      doc: "CoinType of ShakeN Token.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SHAM",
+      doc: "CoinType of Shamu Protocol Token.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SOL",
+      doc: "CoinType of Solana.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::TING",
+      doc: "CoinType of Tinghua Investment Group.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::USDC",
+      doc: "CoinType of USD Coin.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::USDT",
+      doc: "CoinType of Tether USD.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+    {
+      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::WSUI",
+      doc: "CoinType of Wrapped SUI.",
+      fields: [{ name: "dummy_field", ty: "bool" }],
+      abilities: [],
+    },
+  ],
+  errors: {},
+} as const;
