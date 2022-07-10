@@ -1,6 +1,6 @@
 {
   "name": "@aptosis/faucet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TypeScript SDK for the Aptosis Faucet",
   "author": "Ian Macalinao <ian@aptos.is>",
   "homepage": "https://github.com/aptosis/faucet-sdk#readme",
