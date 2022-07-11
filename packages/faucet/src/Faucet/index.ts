@@ -1,7 +1,7 @@
 /**
  * A coin faucet for the Aptos devnet.
  *
- * **Module ID:** `0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet`
+ * **Module ID:** `0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet`
  *
  * @module
  */
@@ -33,10 +33,10 @@ export { idl } from "./idl.js";
 
 /** The address of the module. */
 export const ADDRESS =
-  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98" as const;
+  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8" as const;
 /** The full module name. */
 export const FULL_NAME =
-  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet" as const;
+  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet" as const;
 /** The name of the module. */
 export const NAME = "Faucet" as const;
 
@@ -68,16 +68,16 @@ export const functions = {
 /** All struct types with ability `key`. */
 export const resources = {
   FaucetConfiguration:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet::FaucetConfiguration",
+    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet::FaucetConfiguration",
 } as const;
 
 /** All struct types. */
 export const structs = {
   FaucetConfiguration:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet::FaucetConfiguration",
+    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet::FaucetConfiguration",
 } as const;
 
-/** Payload generators for module `0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet`. */
+/** Payload generators for module `0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet`. */
 const moduleImpl = {
   ...id,
   errorCodes,
@@ -88,6 +88,6 @@ const moduleImpl = {
 
 /** A coin faucet for the Aptos devnet. */
 export const moduleDefinition = moduleImpl as p.MoveModuleDefinition<
-  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98",
+  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8",
   "Faucet"
 > as typeof moduleImpl;

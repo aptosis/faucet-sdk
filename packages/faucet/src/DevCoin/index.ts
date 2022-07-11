@@ -1,7 +1,7 @@
 /**
  * Coins used for devnet.
  *
- * **Module ID:** `0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin`
+ * **Module ID:** `0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin`
  *
  * @module
  */
@@ -12,10 +12,10 @@ export { idl } from "./idl.js";
 
 /** The address of the module. */
 export const ADDRESS =
-  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98" as const;
+  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8" as const;
 /** The full module name. */
 export const FULL_NAME =
-  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin" as const;
+  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin" as const;
 /** The name of the module. */
 export const NAME = "DevCoin" as const;
 
@@ -176,36 +176,36 @@ export const resources = {} as const;
 
 /** All struct types. */
 export const structs = {
-  AVAX: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::AVAX",
+  AVAX: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::AVAX",
   AVERY:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::AVERY",
+    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::AVERY",
   BAMBA:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::BAMBA",
-  BAUM: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::BAUM",
-  BTC: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::BTC",
+    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::BAMBA",
+  BAUM: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::BAUM",
+  BTC: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::BTC",
   CHING:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::CHING",
-  DAT: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::DAT",
-  ETH: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::ETH",
-  FAR: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::FAR",
-  JAIN: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::JAIN",
-  KNV: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::KNV",
-  KSAM: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::KSAM",
-  MO: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::MO",
-  NEAR: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::NEAR",
-  SBF: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SBF",
-  SBR: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SBR",
+    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::CHING",
+  DAT: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::DAT",
+  ETH: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::ETH",
+  FAR: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::FAR",
+  JAIN: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::JAIN",
+  KNV: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::KNV",
+  KSAM: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::KSAM",
+  MO: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::MO",
+  NEAR: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::NEAR",
+  SBF: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::SBF",
+  SBR: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::SBR",
   SHAKE:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SHAKE",
-  SHAM: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SHAM",
-  SOL: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::SOL",
-  TING: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::TING",
-  USDC: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::USDC",
-  USDT: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::USDT",
-  WSUI: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin::WSUI",
+    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::SHAKE",
+  SHAM: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::SHAM",
+  SOL: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::SOL",
+  TING: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::TING",
+  USDC: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::USDC",
+  USDT: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::USDT",
+  WSUI: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::WSUI",
 } as const;
 
-/** Payload generators for module `0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::DevCoin`. */
+/** Payload generators for module `0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin`. */
 const moduleImpl = {
   ...id,
   errorCodes,
@@ -216,6 +216,6 @@ const moduleImpl = {
 
 /** Coins used for devnet. */
 export const moduleDefinition = moduleImpl as p.MoveModuleDefinition<
-  "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98",
+  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8",
   "DevCoin"
 > as typeof moduleImpl;

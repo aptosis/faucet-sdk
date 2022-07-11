@@ -6,7 +6,7 @@
 /** The IDL of the module. */
 export const idl = {
   module_id:
-    "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet",
+    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet",
   doc: "A coin faucet for the Aptos devnet.",
   functions: [
     {
@@ -18,7 +18,7 @@ export const idl = {
   ],
   structs: [
     {
-      name: "0x6718cd7a0bd0e8a34ea586640f4c55910514c2acf495a0453575bbc8c556cd98::Faucet::FaucetConfiguration",
+      name: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet::FaucetConfiguration",
       doc: "Faucet configuration.",
       fields: [
         {
