@@ -5,5 +5,5 @@
  */
 
 export * as EntryModule from "./Entry/index.js";
-export * as errmap from "./errmap.js";
+export { errmap } from "./errmap.js";
 export * as MintWrapperModule from "./MintWrapper/index.js";
