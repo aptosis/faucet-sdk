@@ -1,6 +1,6 @@
 {
   "name": "@aptosis/mint-wrapper",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "TypeScript SDK for the Aptosis Mint Wrapper",
   "author": "Ian Macalinao <ian@aptos.is>",
   "homepage": "https://github.com/aptosis/faucet-sdk#readme",
