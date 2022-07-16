@@ -40,7 +40,7 @@ export const idl = {
           ty: "u64",
         },
       ],
-      type_params: ["CoinType"],
+      type_params: [{ name: "CoinType", is_phantom: true }],
       abilities: ["key"],
     },
     {
@@ -63,7 +63,7 @@ export const idl = {
           ty: "u64",
         },
       ],
-      type_params: ["CoinType"],
+      type_params: [{ name: "CoinType", is_phantom: true }],
       abilities: ["store", "key"],
     },
     {
@@ -89,7 +89,7 @@ export const idl = {
           },
         },
       ],
-      type_params: ["CoinType"],
+      type_params: [{ name: "CoinType", is_phantom: true }],
       abilities: ["key"],
     },
     {
@@ -102,7 +102,7 @@ export const idl = {
           ty: "address",
         },
       ],
-      type_params: ["CoinType"],
+      type_params: [{ name: "CoinType", is_phantom: true }],
       abilities: ["store", "key"],
     },
   ],

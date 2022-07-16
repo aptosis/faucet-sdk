@@ -11,25 +11,24 @@ import type * as p from "@movingco/prelude";
 export type FaucetConfigurationData = {
   /** Signer capability of the Faucet address. */
   signer_cap: {
-    account: p.RawAddress;
+    account: string;
   };
 
   /** Address which will become the Mint Wrapper Minter. */
-  minter: p.RawAddress;
+  minter: string;
 };
 
-/**
- * Payload arguments for {@link entry.initialize}.
- */
-export type InitializePayload = {
+/** Payload arguments for {@link entry.initialize}. */
+export type InitializeArgs = {
   args: {
     /** IDL type: `Address` */
-    minter: p.RawAddress;
+    minter: string;
   };
 };
 
 export * as entry from "./entry.js";
 export { idl } from "./idl.js";
+export * as payloads from "./payloads.js";
 
 /** The address of the module. */
 export const ADDRESS =

@@ -7,86 +7,74 @@
  */
 import type * as p from "@movingco/prelude";
 
-/**
- * Payload arguments for {@link entry.mint}.
- */
-export type MintPayload = {
+/** Payload arguments for {@link entry.mint}. */
+export type MintArgs = {
   args: {
     /** IDL type: `Address` */
-    recipient: p.RawAddress;
+    recipient: string;
     /** IDL type: `U64` */
-    amount: p.U64;
+    amount: string;
   };
   typeArgs: {
     CoinType: string;
   };
 };
 
-/**
- * Payload arguments for {@link entry.accept_minter}.
- */
-export type AcceptMinterPayload = {
+/** Payload arguments for {@link entry.accept_minter}. */
+export type AcceptMinterArgs = {
   args: {
     /** IDL type: `Address` */
-    base: p.RawAddress;
+    base: string;
   };
   typeArgs: {
     CoinType: string;
   };
 };
 
-/**
- * Payload arguments for {@link entry.accept_owner}.
- */
-export type AcceptOwnerPayload = {
+/** Payload arguments for {@link entry.accept_owner}. */
+export type AcceptOwnerArgs = {
   args: {
     /** IDL type: `Address` */
-    base: p.RawAddress;
+    base: string;
   };
   typeArgs: {
     CoinType: string;
   };
 };
 
-/**
- * Payload arguments for {@link entry.create_with_coin}.
- */
-export type CreateWithCoinPayload = {
+/** Payload arguments for {@link entry.create_with_coin}. */
+export type CreateWithCoinArgs = {
   args: {
     /** IDL type: `Vector(U8)` */
-    name: p.ByteString;
+    name: string;
     /** IDL type: `U64` */
-    decimals: p.U64;
+    decimals: string;
     /** IDL type: `U64` */
-    hard_cap: p.U64;
+    hard_cap: string;
   };
   typeArgs: {
     CoinType: string;
   };
 };
 
-/**
- * Payload arguments for {@link entry.offer_minter}.
- */
-export type OfferMinterPayload = {
+/** Payload arguments for {@link entry.offer_minter}. */
+export type OfferMinterArgs = {
   args: {
     /** IDL type: `Address` */
-    destination: p.RawAddress;
+    destination: string;
     /** IDL type: `U64` */
-    allowance: p.U64;
+    allowance: string;
   };
   typeArgs: {
     CoinType: string;
   };
 };
 
-/**
- * Payload arguments for {@link entry.offer_owner}.
- */
-export type OfferOwnerPayload = {
+/** Payload arguments for {@link entry.offer_owner}. */
+export type OfferOwnerArgs = {
   args: {
     /** IDL type: `Address` */
-    recipient: p.RawAddress;
+    recipient: string;
   };
   typeArgs: {
     CoinType: string;
@@ -95,6 +83,7 @@ export type OfferOwnerPayload = {
 
 export * as entry from "./entry.js";
 export { idl } from "./idl.js";
+export * as payloads from "./payloads.js";
 
 /** The address of the module. */
 export const ADDRESS =

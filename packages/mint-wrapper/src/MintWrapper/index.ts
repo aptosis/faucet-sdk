@@ -14,7 +14,7 @@
 import type * as p from "@movingco/prelude";
 
 /** Holds the mint/burn capabilities. */
-export type MintWrapperData<_CoinType = unknown> = {
+export type MintWrapperData = {
   /** The capability to mint `CoinType`. */
   mint_capability: {
     dummy_field: boolean;
@@ -26,33 +26,33 @@ export type MintWrapperData<_CoinType = unknown> = {
   };
 
   /** Optional hard cap of the amount of coins that may be issued. */
-  hard_cap: p.U64;
+  hard_cap: string;
 };
 
 /** Capability to mint at the mint_wrapper of the given coin. */
-export type MinterData<_CoinType = unknown> = {
+export type MinterData = {
   /** Mint capability for this Minter. */
   mint_capability: {
     dummy_field: boolean;
   };
 
   /** Maximum amount that this [Minter] can mint. */
-  allowance: p.U64;
+  allowance: string;
 };
 
 /** Container for holding minters which are to be transferred to someone. */
-export type MinterOffersData<_CoinType = unknown> = {
+export type MinterOffersData = {
   /** Minters being offered. */
   offers: {
-    handle: p.U128;
-    length: p.U64;
+    handle: string;
+    length: string;
   };
 };
 
 /** Having this permission allows one to create and delete minters. */
-export type OwnerData<_CoinType = unknown> = {
+export type OwnerData = {
   /** Where the mint wrapper is stored. */
-  base: p.RawAddress;
+  base: string;
 };
 
 export { idl } from "./idl.js";

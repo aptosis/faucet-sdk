@@ -3,10 +3,10 @@
  *
  * @module
  */
-import type * as p from "@movingco/prelude";
 
+import type * as payloads from "./payloads.js";
 /** Initializes the AVAX token. */
-export const init_avax = (): p.ScriptFunctionPayload => ({
+export const init_avax = (): payloads.InitAvax => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_avax",
@@ -15,7 +15,7 @@ export const init_avax = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the AVERY token. */
-export const init_avery = (): p.ScriptFunctionPayload => ({
+export const init_avery = (): payloads.InitAvery => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_avery",
@@ -24,7 +24,7 @@ export const init_avery = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the BAMBA token. */
-export const init_bamba = (): p.ScriptFunctionPayload => ({
+export const init_bamba = (): payloads.InitBamba => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_bamba",
@@ -33,7 +33,7 @@ export const init_bamba = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the BAUM token. */
-export const init_baum = (): p.ScriptFunctionPayload => ({
+export const init_baum = (): payloads.InitBaum => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_baum",
@@ -42,7 +42,7 @@ export const init_baum = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the BTC token. */
-export const init_btc = (): p.ScriptFunctionPayload => ({
+export const init_btc = (): payloads.InitBtc => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_btc",
@@ -51,7 +51,7 @@ export const init_btc = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the CHING token. */
-export const init_ching = (): p.ScriptFunctionPayload => ({
+export const init_ching = (): payloads.InitChing => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_ching",
@@ -60,7 +60,7 @@ export const init_ching = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the DAT token. */
-export const init_dat = (): p.ScriptFunctionPayload => ({
+export const init_dat = (): payloads.InitDat => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_dat",
@@ -69,7 +69,7 @@ export const init_dat = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the ETH token. */
-export const init_eth = (): p.ScriptFunctionPayload => ({
+export const init_eth = (): payloads.InitEth => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_eth",
@@ -78,7 +78,7 @@ export const init_eth = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the FAR token. */
-export const init_far = (): p.ScriptFunctionPayload => ({
+export const init_far = (): payloads.InitFar => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_far",
@@ -87,7 +87,7 @@ export const init_far = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the JAIN token. */
-export const init_jain = (): p.ScriptFunctionPayload => ({
+export const init_jain = (): payloads.InitJain => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_jain",
@@ -96,7 +96,7 @@ export const init_jain = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the KNV token. */
-export const init_knv = (): p.ScriptFunctionPayload => ({
+export const init_knv = (): payloads.InitKnv => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_knv",
@@ -105,7 +105,7 @@ export const init_knv = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the KSAM token. */
-export const init_ksam = (): p.ScriptFunctionPayload => ({
+export const init_ksam = (): payloads.InitKsam => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_ksam",
@@ -114,7 +114,7 @@ export const init_ksam = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the MO token. */
-export const init_mo = (): p.ScriptFunctionPayload => ({
+export const init_mo = (): payloads.InitMo => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_mo",
@@ -123,7 +123,7 @@ export const init_mo = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the NEAR token. */
-export const init_near = (): p.ScriptFunctionPayload => ({
+export const init_near = (): payloads.InitNear => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_near",
@@ -132,7 +132,7 @@ export const init_near = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the SBF token. */
-export const init_sbf = (): p.ScriptFunctionPayload => ({
+export const init_sbf = (): payloads.InitSbf => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sbf",
@@ -141,7 +141,7 @@ export const init_sbf = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the SBR token. */
-export const init_sbr = (): p.ScriptFunctionPayload => ({
+export const init_sbr = (): payloads.InitSbr => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sbr",
@@ -150,7 +150,7 @@ export const init_sbr = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the SHAKE token. */
-export const init_shake = (): p.ScriptFunctionPayload => ({
+export const init_shake = (): payloads.InitShake => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_shake",
@@ -159,7 +159,7 @@ export const init_shake = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the SHAM token. */
-export const init_sham = (): p.ScriptFunctionPayload => ({
+export const init_sham = (): payloads.InitSham => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sham",
@@ -168,7 +168,7 @@ export const init_sham = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the SOL token. */
-export const init_sol = (): p.ScriptFunctionPayload => ({
+export const init_sol = (): payloads.InitSol => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sol",
@@ -177,7 +177,7 @@ export const init_sol = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the TING token. */
-export const init_ting = (): p.ScriptFunctionPayload => ({
+export const init_ting = (): payloads.InitTing => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_ting",
@@ -186,7 +186,7 @@ export const init_ting = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the USDC token. */
-export const init_usdc = (): p.ScriptFunctionPayload => ({
+export const init_usdc = (): payloads.InitUsdc => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_usdc",
@@ -195,7 +195,7 @@ export const init_usdc = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the USDT token. */
-export const init_usdt = (): p.ScriptFunctionPayload => ({
+export const init_usdt = (): payloads.InitUsdt => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_usdt",
@@ -204,7 +204,7 @@ export const init_usdt = (): p.ScriptFunctionPayload => ({
 });
 
 /** Initializes the WSUI token. */
-export const init_wsui = (): p.ScriptFunctionPayload => ({
+export const init_wsui = (): payloads.InitWsui => ({
   type: "script_function_payload",
   function:
     "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_wsui",
