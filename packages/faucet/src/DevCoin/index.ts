@@ -9,6 +9,7 @@ import type * as p from "@movingco/prelude";
 
 export * as entry from "./entry.js";
 export { idl } from "./idl.js";
+export * as payloads from "./payloads.js";
 
 /** The address of the module. */
 export const ADDRESS =

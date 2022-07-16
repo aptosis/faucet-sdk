@@ -18,10 +18,8 @@ export type FaucetConfigurationData = {
   minter: p.RawAddress;
 };
 
-/**
- * Payload arguments for {@link entry.initialize}.
- */
-export type InitializePayload = {
+/** Payload arguments for {@link entry.initialize}. */
+export type InitializeArgs = {
   args: {
     /** IDL type: `Address` */
     minter: p.RawAddress;
@@ -30,6 +28,7 @@ export type InitializePayload = {
 
 export * as entry from "./entry.js";
 export { idl } from "./idl.js";
+export * as payloads from "./payloads.js";
 
 /** The address of the module. */
 export const ADDRESS =

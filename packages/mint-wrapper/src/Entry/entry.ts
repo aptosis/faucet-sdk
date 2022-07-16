@@ -6,11 +6,9 @@
 import * as p from "@movingco/prelude";
 
 import type * as mod from "./index.js";
+import type * as payloads from "./payloads.js";
 /** Mints coins from the mint_wrapper on behalf of the mint_wrapper's authority. */
-export const mint = ({
-  args,
-  typeArgs,
-}: mod.MintPayload): p.ScriptFunctionPayload => ({
+export const mint = ({ args, typeArgs }: mod.MintArgs): payloads.Mint => ({
   type: "script_function_payload",
   function:
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::mint",
@@ -25,7 +23,7 @@ export const mint = ({
 export const accept_minter = ({
   args,
   typeArgs,
-}: mod.AcceptMinterPayload): p.ScriptFunctionPayload => ({
+}: mod.AcceptMinterArgs): payloads.AcceptMinter => ({
   type: "script_function_payload",
   function:
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::accept_minter",
@@ -37,7 +35,7 @@ export const accept_minter = ({
 export const accept_owner = ({
   args,
   typeArgs,
-}: mod.AcceptOwnerPayload): p.ScriptFunctionPayload => ({
+}: mod.AcceptOwnerArgs): payloads.AcceptOwner => ({
   type: "script_function_payload",
   function:
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::accept_owner",
@@ -52,7 +50,7 @@ export const accept_owner = ({
 export const create_with_coin = ({
   args,
   typeArgs,
-}: mod.CreateWithCoinPayload): p.ScriptFunctionPayload => ({
+}: mod.CreateWithCoinArgs): payloads.CreateWithCoin => ({
   type: "script_function_payload",
   function:
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::create_with_coin",
@@ -68,7 +66,7 @@ export const create_with_coin = ({
 export const offer_minter = ({
   args,
   typeArgs,
-}: mod.OfferMinterPayload): p.ScriptFunctionPayload => ({
+}: mod.OfferMinterArgs): payloads.OfferMinter => ({
   type: "script_function_payload",
   function:
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::offer_minter",
@@ -83,7 +81,7 @@ export const offer_minter = ({
 export const offer_owner = ({
   args,
   typeArgs,
-}: mod.OfferOwnerPayload): p.ScriptFunctionPayload => ({
+}: mod.OfferOwnerArgs): payloads.OfferOwner => ({
   type: "script_function_payload",
   function:
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::offer_owner",

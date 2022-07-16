@@ -14,7 +14,7 @@
 import type * as p from "@movingco/prelude";
 
 /** Holds the mint/burn capabilities. */
-export type MintWrapperData<_CoinType = unknown> = {
+export type MintWrapperData = {
   /** The capability to mint `CoinType`. */
   mint_capability: {
     dummy_field: boolean;
@@ -30,7 +30,7 @@ export type MintWrapperData<_CoinType = unknown> = {
 };
 
 /** Capability to mint at the mint_wrapper of the given coin. */
-export type MinterData<_CoinType = unknown> = {
+export type MinterData = {
   /** Mint capability for this Minter. */
   mint_capability: {
     dummy_field: boolean;
@@ -41,7 +41,7 @@ export type MinterData<_CoinType = unknown> = {
 };
 
 /** Container for holding minters which are to be transferred to someone. */
-export type MinterOffersData<_CoinType = unknown> = {
+export type MinterOffersData = {
   /** Minters being offered. */
   offers: {
     handle: p.U128;
@@ -50,7 +50,7 @@ export type MinterOffersData<_CoinType = unknown> = {
 };
 
 /** Having this permission allows one to create and delete minters. */
-export type OwnerData<_CoinType = unknown> = {
+export type OwnerData = {
   /** Where the mint wrapper is stored. */
   base: p.RawAddress;
 };
