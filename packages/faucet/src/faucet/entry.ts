@@ -13,7 +13,7 @@ export const initialize = ({
 }: mod.InitializeArgs): payloads.Initialize => ({
   type: "script_function_payload",
   function:
-    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet::initialize",
+    "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::faucet::initialize",
   type_arguments: [],
   arguments: [p.serializers.hexString(args.minter)],
 });

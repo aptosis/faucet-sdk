@@ -6,7 +6,7 @@
 /** The IDL of the module. */
 export const idl = {
   module_id:
-    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet",
+    "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::faucet",
   doc: "A coin faucet for the Aptos devnet.\n\n# Setup\n\nTo update this repo, run `cargo run --bin setup && ./scripts/init_tokens.sh`.",
   functions: [
     {
@@ -18,7 +18,7 @@ export const idl = {
   ],
   structs: [
     {
-      name: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet::FaucetConfiguration",
+      name: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::faucet::FaucetConfiguration",
       doc: "Faucet configuration.",
       fields: [
         {

@@ -1,7 +1,7 @@
 /**
  * Coins used for devnet.
  *
- * **Module ID:** `0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin`
+ * **Module ID:** `0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin`
  *
  * @module
  */
@@ -14,10 +14,10 @@ export * as payloads from "./payloads.js";
 
 /** The address of the module. */
 export const ADDRESS =
-  "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0" as const;
+  "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a" as const;
 /** The full module name. */
 export const FULL_NAME =
-  "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin" as const;
+  "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin" as const;
 /** The name of the module. */
 export const NAME = "dev_coin" as const;
 
@@ -33,12 +33,6 @@ export const errorCodes = {} as const;
 
 /** All module function IDLs. */
 export const functions = {
-  init_aptos: {
-    name: "init_aptos",
-    doc: "Initializes the APTOS token.",
-    ty_args: [],
-    args: [],
-  },
   init_avax: {
     name: "init_avax",
     doc: "Initializes the AVAX token.",
@@ -178,36 +172,34 @@ export const resources = {} as const;
 
 /** All struct types. */
 export const structs = {
-  APTOS:
-    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::APTOS",
-  AVAX: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::AVAX",
+  AVAX: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::AVAX",
   AVERY:
-    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::AVERY",
+    "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::AVERY",
   BAMBA:
-    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::BAMBA",
-  BAUM: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::BAUM",
-  BTC: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::BTC",
-  DAT: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::DAT",
-  ETH: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::ETH",
-  FAR: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::FAR",
-  JAIN: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::JAIN",
-  KNV: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::KNV",
-  KSAM: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::KSAM",
-  MO: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::MO",
-  NEAR: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::NEAR",
-  SBF: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::SBF",
-  SBR: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::SBR",
+    "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::BAMBA",
+  BAUM: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::BAUM",
+  BTC: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::BTC",
+  DAT: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::DAT",
+  ETH: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::ETH",
+  FAR: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::FAR",
+  JAIN: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::JAIN",
+  KNV: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::KNV",
+  KSAM: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::KSAM",
+  MO: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::MO",
+  NEAR: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::NEAR",
+  SBF: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::SBF",
+  SBR: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::SBR",
   SHAKE:
-    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::SHAKE",
-  SHAM: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::SHAM",
-  SOL: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::SOL",
-  TING: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::TING",
-  USDC: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::USDC",
-  USDT: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::USDT",
-  WSUI: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::WSUI",
+    "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::SHAKE",
+  SHAM: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::SHAM",
+  SOL: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::SOL",
+  TING: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::TING",
+  USDC: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::USDC",
+  USDT: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::USDT",
+  WSUI: "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin::WSUI",
 } as const;
 
-/** Payload generators for module `0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin`. */
+/** Payload generators for module `0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a::dev_coin`. */
 const moduleImpl = {
   ...id,
   errorCodes,
@@ -218,6 +210,6 @@ const moduleImpl = {
 
 /** Coins used for devnet. */
 export const moduleDefinition = moduleImpl as p.MoveModuleDefinition<
-  "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0",
+  "0x2522bca997f581b007c8977992f4e38cd756bf11fc263d29a4275b703259a21a",
   "dev_coin"
 > as typeof moduleImpl;
