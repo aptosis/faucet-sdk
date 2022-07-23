@@ -1,7 +1,7 @@
 /**
- * Entry functions for the MintWrapper.
+ * Entry functions for the mint_wrapper.
  *
- * **Module ID:** `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry`
+ * **Module ID:** `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry`
  *
  * @module
  */
@@ -82,6 +82,7 @@ export type OfferOwnerArgs = {
 };
 
 export * as entry from "./entry.js";
+export * as entryNames from "./entryNames.js";
 export { idl } from "./idl.js";
 export * as payloads from "./payloads.js";
 
@@ -90,9 +91,9 @@ export const ADDRESS =
   "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c" as const;
 /** The full module name. */
 export const FULL_NAME =
-  "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry" as const;
+  "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry" as const;
 /** The name of the module. */
-export const NAME = "Entry" as const;
+export const NAME = "mw_entry" as const;
 
 /** Module ID information. */
 export const id = {
@@ -130,7 +131,7 @@ export const functions = {
   },
   create_with_coin: {
     name: "create_with_coin",
-    doc: "Creates a new coin and mint_wrapper.\nThe given account also becomes the MintWrapper's base.",
+    doc: "Creates a new coin and mint_wrapper.\nThe given account also becomes the mint_wrapper's base.",
     ty_args: ["CoinType"],
     args: [
       {
@@ -198,7 +199,7 @@ export const resources = {} as const;
 /** All struct types. */
 export const structs = {} as const;
 
-/** Payload generators for module `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry`. */
+/** Payload generators for module `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry`. */
 const moduleImpl = {
   ...id,
   errorCodes,
@@ -207,8 +208,8 @@ const moduleImpl = {
   structs,
 } as const;
 
-/** Entry functions for the MintWrapper. */
+/** Entry functions for the mint_wrapper. */
 export const moduleDefinition = moduleImpl as p.MoveModuleDefinition<
   "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c",
-  "Entry"
+  "mw_entry"
 > as typeof moduleImpl;

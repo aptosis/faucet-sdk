@@ -11,7 +11,7 @@ import type * as payloads from "./payloads.js";
 export const mint = ({ args, typeArgs }: mod.MintArgs): payloads.Mint => ({
   type: "script_function_payload",
   function:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::mint",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::mint",
   type_arguments: [typeArgs.CoinType],
   arguments: [
     p.serializers.hexString(args.recipient),
@@ -26,7 +26,7 @@ export const accept_minter = ({
 }: mod.AcceptMinterArgs): payloads.AcceptMinter => ({
   type: "script_function_payload",
   function:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::accept_minter",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::accept_minter",
   type_arguments: [typeArgs.CoinType],
   arguments: [p.serializers.hexString(args.base)],
 });
@@ -38,14 +38,14 @@ export const accept_owner = ({
 }: mod.AcceptOwnerArgs): payloads.AcceptOwner => ({
   type: "script_function_payload",
   function:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::accept_owner",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::accept_owner",
   type_arguments: [typeArgs.CoinType],
   arguments: [p.serializers.hexString(args.base)],
 });
 
 /**
  * Creates a new coin and mint_wrapper.
- * The given account also becomes the MintWrapper's base.
+ * The given account also becomes the mint_wrapper's base.
  */
 export const create_with_coin = ({
   args,
@@ -53,7 +53,7 @@ export const create_with_coin = ({
 }: mod.CreateWithCoinArgs): payloads.CreateWithCoin => ({
   type: "script_function_payload",
   function:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::create_with_coin",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::create_with_coin",
   type_arguments: [typeArgs.CoinType],
   arguments: [
     p.serializers.hexString(args.name),
@@ -69,7 +69,7 @@ export const offer_minter = ({
 }: mod.OfferMinterArgs): payloads.OfferMinter => ({
   type: "script_function_payload",
   function:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::offer_minter",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::offer_minter",
   type_arguments: [typeArgs.CoinType],
   arguments: [
     p.serializers.hexString(args.destination),
@@ -84,7 +84,7 @@ export const offer_owner = ({
 }: mod.OfferOwnerArgs): payloads.OfferOwner => ({
   type: "script_function_payload",
   function:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry::offer_owner",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::offer_owner",
   type_arguments: [typeArgs.CoinType],
   arguments: [p.serializers.hexString(args.recipient)],
 });

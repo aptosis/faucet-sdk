@@ -6,8 +6,8 @@
 /** The IDL of the module. */
 export const idl = {
   module_id:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet",
-  doc: "A coin faucet for the Aptos devnet.",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet",
+  doc: "A coin faucet for the Aptos devnet.\n\n# Setup\n\nTo update this repo, run `cargo run --bin setup && ./scripts/init_tokens.sh`.",
   functions: [
     {
       name: "initialize",
@@ -18,13 +18,13 @@ export const idl = {
   ],
   structs: [
     {
-      name: "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet::FaucetConfiguration",
+      name: "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet::FaucetConfiguration",
       doc: "Faucet configuration.",
       fields: [
         {
           name: "signer_cap",
           doc: "Signer capability of the Faucet address.",
-          ty: { struct: { name: "0x1::Account::SignerCapability" } },
+          ty: { struct: { name: "0x1::account::SignerCapability" } },
         },
         {
           name: "minter",

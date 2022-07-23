@@ -1,0 +1,12 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "excludePrivate": true,
+  "includeVersion": true,
+  "out": "docs/",
+  "entryPointStrategy": "packages",
+  "includes": "packages/",
+  "readme": "./README.md",
+  "name": "Aptosis Faucet TypeScript SDK",
+  "gaID": "G-9VPS82HNP2",
+  "cname": "faucet-sdk.aptos.is"
+}

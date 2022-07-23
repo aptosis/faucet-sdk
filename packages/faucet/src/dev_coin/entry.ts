@@ -5,11 +5,20 @@
  */
 
 import type * as payloads from "./payloads.js";
+/** Initializes the APTOS token. */
+export const init_aptos = (): payloads.InitAptos => ({
+  type: "script_function_payload",
+  function:
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_aptos",
+  type_arguments: [],
+  arguments: [],
+});
+
 /** Initializes the AVAX token. */
 export const init_avax = (): payloads.InitAvax => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_avax",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_avax",
   type_arguments: [],
   arguments: [],
 });
@@ -18,7 +27,7 @@ export const init_avax = (): payloads.InitAvax => ({
 export const init_avery = (): payloads.InitAvery => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_avery",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_avery",
   type_arguments: [],
   arguments: [],
 });
@@ -27,7 +36,7 @@ export const init_avery = (): payloads.InitAvery => ({
 export const init_bamba = (): payloads.InitBamba => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_bamba",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_bamba",
   type_arguments: [],
   arguments: [],
 });
@@ -36,7 +45,7 @@ export const init_bamba = (): payloads.InitBamba => ({
 export const init_baum = (): payloads.InitBaum => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_baum",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_baum",
   type_arguments: [],
   arguments: [],
 });
@@ -45,16 +54,7 @@ export const init_baum = (): payloads.InitBaum => ({
 export const init_btc = (): payloads.InitBtc => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_btc",
-  type_arguments: [],
-  arguments: [],
-});
-
-/** Initializes the CHING token. */
-export const init_ching = (): payloads.InitChing => ({
-  type: "script_function_payload",
-  function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_ching",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_btc",
   type_arguments: [],
   arguments: [],
 });
@@ -63,7 +63,7 @@ export const init_ching = (): payloads.InitChing => ({
 export const init_dat = (): payloads.InitDat => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_dat",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_dat",
   type_arguments: [],
   arguments: [],
 });
@@ -72,7 +72,7 @@ export const init_dat = (): payloads.InitDat => ({
 export const init_eth = (): payloads.InitEth => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_eth",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_eth",
   type_arguments: [],
   arguments: [],
 });
@@ -81,7 +81,7 @@ export const init_eth = (): payloads.InitEth => ({
 export const init_far = (): payloads.InitFar => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_far",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_far",
   type_arguments: [],
   arguments: [],
 });
@@ -90,7 +90,7 @@ export const init_far = (): payloads.InitFar => ({
 export const init_jain = (): payloads.InitJain => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_jain",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_jain",
   type_arguments: [],
   arguments: [],
 });
@@ -99,7 +99,7 @@ export const init_jain = (): payloads.InitJain => ({
 export const init_knv = (): payloads.InitKnv => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_knv",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_knv",
   type_arguments: [],
   arguments: [],
 });
@@ -108,7 +108,7 @@ export const init_knv = (): payloads.InitKnv => ({
 export const init_ksam = (): payloads.InitKsam => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_ksam",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_ksam",
   type_arguments: [],
   arguments: [],
 });
@@ -117,7 +117,7 @@ export const init_ksam = (): payloads.InitKsam => ({
 export const init_mo = (): payloads.InitMo => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_mo",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_mo",
   type_arguments: [],
   arguments: [],
 });
@@ -126,7 +126,7 @@ export const init_mo = (): payloads.InitMo => ({
 export const init_near = (): payloads.InitNear => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_near",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_near",
   type_arguments: [],
   arguments: [],
 });
@@ -135,7 +135,7 @@ export const init_near = (): payloads.InitNear => ({
 export const init_sbf = (): payloads.InitSbf => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sbf",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_sbf",
   type_arguments: [],
   arguments: [],
 });
@@ -144,7 +144,7 @@ export const init_sbf = (): payloads.InitSbf => ({
 export const init_sbr = (): payloads.InitSbr => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sbr",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_sbr",
   type_arguments: [],
   arguments: [],
 });
@@ -153,7 +153,7 @@ export const init_sbr = (): payloads.InitSbr => ({
 export const init_shake = (): payloads.InitShake => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_shake",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_shake",
   type_arguments: [],
   arguments: [],
 });
@@ -162,7 +162,7 @@ export const init_shake = (): payloads.InitShake => ({
 export const init_sham = (): payloads.InitSham => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sham",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_sham",
   type_arguments: [],
   arguments: [],
 });
@@ -171,7 +171,7 @@ export const init_sham = (): payloads.InitSham => ({
 export const init_sol = (): payloads.InitSol => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_sol",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_sol",
   type_arguments: [],
   arguments: [],
 });
@@ -180,7 +180,7 @@ export const init_sol = (): payloads.InitSol => ({
 export const init_ting = (): payloads.InitTing => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_ting",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_ting",
   type_arguments: [],
   arguments: [],
 });
@@ -189,7 +189,7 @@ export const init_ting = (): payloads.InitTing => ({
 export const init_usdc = (): payloads.InitUsdc => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_usdc",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_usdc",
   type_arguments: [],
   arguments: [],
 });
@@ -198,7 +198,7 @@ export const init_usdc = (): payloads.InitUsdc => ({
 export const init_usdt = (): payloads.InitUsdt => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_usdt",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_usdt",
   type_arguments: [],
   arguments: [],
 });
@@ -207,7 +207,7 @@ export const init_usdt = (): payloads.InitUsdt => ({
 export const init_wsui = (): payloads.InitWsui => ({
   type: "script_function_payload",
   function:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::DevCoin::init_wsui",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::dev_coin::init_wsui",
   type_arguments: [],
   arguments: [],
 });

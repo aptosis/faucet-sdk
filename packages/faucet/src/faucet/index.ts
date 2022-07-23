@@ -1,14 +1,22 @@
 /**
  * A coin faucet for the Aptos devnet.
  *
- * **Module ID:** `0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet`
+ * # Setup
+ *
+ * To update this repo, run `cargo run --bin setup && ./scripts/init_tokens.sh`.
+ *
+ * **Module ID:** `0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet`
  *
  * @module
  */
 import type * as p from "@movingco/prelude";
 
-/** Faucet configuration. */
-export type FaucetConfigurationData = {
+/**
+ * Faucet configuration.
+ *
+ * Type name: `0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet::FaucetConfiguration`
+ */
+export interface IFaucetConfiguration {
   /** Signer capability of the Faucet address. */
   signer_cap: {
     account: p.RawAddress;
@@ -16,7 +24,7 @@ export type FaucetConfigurationData = {
 
   /** Address which will become the Mint Wrapper Minter. */
   minter: p.RawAddress;
-};
+}
 
 /** Payload arguments for {@link entry.initialize}. */
 export type InitializeArgs = {
@@ -27,17 +35,18 @@ export type InitializeArgs = {
 };
 
 export * as entry from "./entry.js";
+export * as entryNames from "./entryNames.js";
 export { idl } from "./idl.js";
 export * as payloads from "./payloads.js";
 
 /** The address of the module. */
 export const ADDRESS =
-  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8" as const;
+  "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0" as const;
 /** The full module name. */
 export const FULL_NAME =
-  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet" as const;
+  "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet" as const;
 /** The name of the module. */
-export const NAME = "Faucet" as const;
+export const NAME = "faucet" as const;
 
 /** Module ID information. */
 export const id = {
@@ -67,16 +76,16 @@ export const functions = {
 /** All struct types with ability `key`. */
 export const resources = {
   FaucetConfiguration:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet::FaucetConfiguration",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet::FaucetConfiguration",
 } as const;
 
 /** All struct types. */
 export const structs = {
   FaucetConfiguration:
-    "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet::FaucetConfiguration",
+    "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet::FaucetConfiguration",
 } as const;
 
-/** Payload generators for module `0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8::Faucet`. */
+/** Payload generators for module `0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0::faucet`. */
 const moduleImpl = {
   ...id,
   errorCodes,
@@ -85,8 +94,14 @@ const moduleImpl = {
   structs,
 } as const;
 
-/** A coin faucet for the Aptos devnet. */
+/**
+ * A coin faucet for the Aptos devnet.
+ *
+ * # Setup
+ *
+ * To update this repo, run `cargo run --bin setup && ./scripts/init_tokens.sh`.
+ */
 export const moduleDefinition = moduleImpl as p.MoveModuleDefinition<
-  "0x6fdf5c5cf431d5db75b2b53f0df8aa6687056d47ea7a588e9c512dd2b7a810a8",
-  "Faucet"
+  "0x10cf22de3cef0a6ef68b2da43e1d20c189c033c93a8503a40ee06c0347a11ea0",
+  "faucet"
 > as typeof moduleImpl;

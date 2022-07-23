@@ -1,9 +1,9 @@
 /**
- * This module contains generated types and helper functions for the package `Faucet`.
+ * This module contains generated types and helper functions for the package `faucet`.
  *
  * @module
  */
 
-export * as DevCoinModule from "./DevCoin/index.js";
-export { errmap } from "./errmap.js";
-export * as FaucetModule from "./Faucet/index.js";
+export * as faucet_dev_coin from "./dev_coin/index.js";
+export { errmap as faucet_errmap } from "./errmap.js";
+export * as faucet_faucet from "./faucet/index.js";

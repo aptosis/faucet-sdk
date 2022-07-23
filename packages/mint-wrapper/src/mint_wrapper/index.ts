@@ -7,14 +7,18 @@
  * - **Owners**, which can create and delete Minters
  * - **Minters**, which can mint coins to any address
  *
- * **Module ID:** `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper`
+ * **Module ID:** `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper`
  *
  * @module
  */
 import type * as p from "@movingco/prelude";
 
-/** Holds the mint/burn capabilities. */
-export type MintWrapperData = {
+/**
+ * Holds the mint/burn capabilities.
+ *
+ * Type name: `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MintWrapper`
+ */
+export interface IMintWrapper {
   /** The capability to mint `CoinType`. */
   mint_capability: {
     dummy_field: boolean;
@@ -27,10 +31,14 @@ export type MintWrapperData = {
 
   /** Optional hard cap of the amount of coins that may be issued. */
   hard_cap: p.U64;
-};
+}
 
-/** Capability to mint at the mint_wrapper of the given coin. */
-export type MinterData = {
+/**
+ * Capability to mint at the mint_wrapper of the given coin.
+ *
+ * Type name: `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Minter`
+ */
+export interface IMinter {
   /** Mint capability for this Minter. */
   mint_capability: {
     dummy_field: boolean;
@@ -38,22 +46,30 @@ export type MinterData = {
 
   /** Maximum amount that this [Minter] can mint. */
   allowance: p.U64;
-};
+}
 
-/** Container for holding minters which are to be transferred to someone. */
-export type MinterOffersData = {
+/**
+ * Container for holding minters which are to be transferred to someone.
+ *
+ * Type name: `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MinterOffers`
+ */
+export interface IMinterOffers {
   /** Minters being offered. */
   offers: {
     handle: p.U128;
     length: p.U64;
   };
-};
+}
 
-/** Having this permission allows one to create and delete minters. */
-export type OwnerData = {
+/**
+ * Having this permission allows one to create and delete minters.
+ *
+ * Type name: `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Owner`
+ */
+export interface IOwner {
   /** Where the mint wrapper is stored. */
   base: p.RawAddress;
-};
+}
 
 export { idl } from "./idl.js";
 
@@ -62,9 +78,9 @@ export const ADDRESS =
   "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c" as const;
 /** The full module name. */
 export const FULL_NAME =
-  "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper" as const;
+  "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper" as const;
 /** The name of the module. */
-export const NAME = "MintWrapper" as const;
+export const NAME = "mint_wrapper" as const;
 
 /** Module ID information. */
 export const id = {
@@ -97,28 +113,28 @@ export const functions = {} as const;
 /** All struct types with ability `key`. */
 export const resources = {
   MintWrapper:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::MintWrapper",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MintWrapper",
   Minter:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::Minter",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Minter",
   MinterOffers:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::MinterOffers",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MinterOffers",
   Owner:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::Owner",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Owner",
 } as const;
 
 /** All struct types. */
 export const structs = {
   MintWrapper:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::MintWrapper",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MintWrapper",
   Minter:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::Minter",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Minter",
   MinterOffers:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::MinterOffers",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MinterOffers",
   Owner:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::Owner",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Owner",
 } as const;
 
-/** Payload generators for module `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper`. */
+/** Payload generators for module `0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper`. */
 const moduleImpl = {
   ...id,
   errorCodes,
@@ -138,5 +154,5 @@ const moduleImpl = {
  */
 export const moduleDefinition = moduleImpl as p.MoveModuleDefinition<
   "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c",
-  "MintWrapper"
+  "mint_wrapper"
 > as typeof moduleImpl;

@@ -6,8 +6,8 @@
 /** The IDL of the module. */
 export const idl = {
   module_id:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::Entry",
-  doc: "Entry functions for the MintWrapper.",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry",
+  doc: "Entry functions for the mint_wrapper.",
   functions: [
     {
       name: "mint",
@@ -32,7 +32,7 @@ export const idl = {
     },
     {
       name: "create_with_coin",
-      doc: "Creates a new coin and mint_wrapper.\nThe given account also becomes the MintWrapper's base.",
+      doc: "Creates a new coin and mint_wrapper.\nThe given account also becomes the mint_wrapper's base.",
       ty_args: ["CoinType"],
       args: [
         { name: "name", ty: { vector: "u8" } },

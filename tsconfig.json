@@ -10,5 +10,10 @@
   "compilerOptions": {
     "lib": ["DOM", "ES2019"]
   },
-  "references": [{ "path": "packages/faucet/" }]
+  "references": [
+    { "path": "packages/faucet/" },
+    { "path": "packages/faucet/tsconfig.cjs.json" },
+    { "path": "packages/mint-wrapper/" },
+    { "path": "packages/mint-wrapper/tsconfig.cjs.json" }
+  ]
 }

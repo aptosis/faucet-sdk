@@ -6,12 +6,12 @@
 /** The IDL of the module. */
 export const idl = {
   module_id:
-    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper",
+    "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper",
   doc: "Allows delegating the minting of coins to multiple addresses.\n\nA `MintWrapper` can be created for any coin.\n\nThere are two roles one can possess with a `MintWrapper`:\n- **Owners**, which can create and delete Minters\n- **Minters**, which can mint coins to any address",
   functions: [],
   structs: [
     {
-      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::MintWrapper",
+      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MintWrapper",
       doc: "Holds the mint/burn capabilities.",
       fields: [
         {
@@ -19,7 +19,7 @@ export const idl = {
           doc: "The capability to mint `CoinType`.",
           ty: {
             struct: {
-              name: "0x1::Coin::MintCapability",
+              name: "0x1::coin::MintCapability",
               ty_args: [{ type_param: 0 }],
             },
           },
@@ -29,7 +29,7 @@ export const idl = {
           doc: "The capability to burn `CoinType`.",
           ty: {
             struct: {
-              name: "0x1::Coin::BurnCapability",
+              name: "0x1::coin::BurnCapability",
               ty_args: [{ type_param: 0 }],
             },
           },
@@ -44,7 +44,7 @@ export const idl = {
       abilities: ["key"],
     },
     {
-      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::Minter",
+      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Minter",
       doc: "Capability to mint at the mint_wrapper of the given coin.",
       fields: [
         {
@@ -52,7 +52,7 @@ export const idl = {
           doc: "Mint capability for this Minter.",
           ty: {
             struct: {
-              name: "0x1::Coin::MintCapability",
+              name: "0x1::coin::MintCapability",
               ty_args: [{ type_param: 0 }],
             },
           },
@@ -67,7 +67,7 @@ export const idl = {
       abilities: ["store", "key"],
     },
     {
-      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::MinterOffers",
+      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::MinterOffers",
       doc: "Container for holding minters which are to be transferred to someone.",
       fields: [
         {
@@ -75,12 +75,12 @@ export const idl = {
           doc: "Minters being offered.",
           ty: {
             struct: {
-              name: "0x1::Table::Table",
+              name: "0x1::table::Table",
               ty_args: [
                 "address",
                 {
                   struct: {
-                    name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::Minter",
+                    name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Minter",
                     ty_args: [{ type_param: 0 }],
                   },
                 },
@@ -93,7 +93,7 @@ export const idl = {
       abilities: ["key"],
     },
     {
-      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::MintWrapper::Owner",
+      name: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper::Owner",
       doc: "Having this permission allows one to create and delete minters.",
       fields: [
         {
