@@ -49,6 +49,43 @@ export const errmap = {
       "11": {
         name: "ESCRIPT_NOT_ALLOWED",
       },
+      "1001": {
+        name: "PROLOGUE_EINVALID_ACCOUNT_AUTH_KEY",
+        doc: "Prologue errors. These are separated out from the other errors in this\nmodule since they are mapped separately to major VM statuses, and are\nimportant to the semantics of the system.",
+      },
+      "1002": {
+        name: "PROLOGUE_ESEQUENCE_NUMBER_TOO_OLD",
+      },
+      "1003": {
+        name: "PROLOGUE_ESEQUENCE_NUMBER_TOO_NEW",
+      },
+      "1004": {
+        name: "PROLOGUE_EACCOUNT_DNE",
+      },
+      "1005": {
+        name: "PROLOGUE_ECANT_PAY_GAS_DEPOSIT",
+      },
+      "1006": {
+        name: "PROLOGUE_ETRANSACTION_EXPIRED",
+      },
+      "1007": {
+        name: "PROLOGUE_EBAD_CHAIN_ID",
+      },
+      "1008": {
+        name: "PROLOGUE_ESCRIPT_NOT_ALLOWED",
+      },
+      "1009": {
+        name: "PROLOGUE_EMODULE_NOT_ALLOWED",
+      },
+      "1010": {
+        name: "PROLOGUE_EINVALID_WRITESET_SENDER",
+      },
+      "1011": {
+        name: "PROLOGUE_ESEQUENCE_NUMBER_TOO_BIG",
+      },
+      "1012": {
+        name: "PROLOGUE_ESECONDARY_KEYS_ADDRESSES_COUNT_MISMATCH",
+      },
     },
     "0x1::acl": {
       "0": {
@@ -58,6 +95,18 @@ export const errmap = {
       "1": {
         name: "ENOT_CONTAIN",
         doc: "The ACL does not contain the address.",
+      },
+    },
+    "0x1::aptos_coin": {
+      "1": {
+        name: "ENO_CAPABILITIES",
+        doc: "Error codes",
+      },
+      "2": {
+        name: "EALREADY_DELEGATED",
+      },
+      "3": {
+        name: "EDELEGATION_NOT_FOUND",
       },
     },
     "0x1::aptos_governance": {
@@ -144,6 +193,20 @@ export const errmap = {
         doc: "The `ChainId` resource was not in the required state",
       },
     },
+    "0x1::code": {
+      "1": {
+        name: "EMODULE_NAME_CLASH",
+        doc: "A package is attempted to publish with module names clashing with modules published by other packages on this\naddress.",
+      },
+      "2": {
+        name: "EUPGRADE_IMMUTABLE",
+        doc: "A package is attempted to upgrade which is marked as immutable.",
+      },
+      "3": {
+        name: "EUPGRADE_WEAKER_POLICY",
+        doc: "A package is attempted to upgrade with a weaker policy than previously.",
+      },
+    },
     "0x1::coin": {
       "0": {
         name: "ECOIN_INFO_ADDRESS_MISMATCH",
@@ -186,11 +249,6 @@ export const errmap = {
         name: "EQUAL",
       },
     },
-    "0x1::compare": {
-      "0": {
-        name: "EQUAL",
-      },
-    },
     "0x1::consensus_config": {
       "0": {
         name: "ECONFIG",
@@ -227,13 +285,7 @@ export const errmap = {
     },
     "0x1::governance_proposal": {
       "1": {
-        name: "ECODE_LOCATION_TOO_LONG",
-      },
-      "2": {
-        name: "ETITLE_TOO_LONG",
-      },
-      "3": {
-        name: "EDESCRIPTION_TOO_LONG",
+        name: "ETOO_LONG",
       },
     },
     "0x1::guid": {
@@ -246,20 +298,6 @@ export const errmap = {
       "0": {
         name: "ENO_CAPABILITIES",
         doc: "When no capabilities (burn/mint) found on an account.",
-      },
-    },
-    "0x1::offer": {
-      "0": {
-        name: "EOFFER_DNE_FOR_ACCOUNT",
-        doc: "An offer of the specified type for the account does not exist",
-      },
-      "1": {
-        name: "EOFFER_ALREADY_CREATED",
-        doc: "Address already has an offer of this type.",
-      },
-      "2": {
-        name: "EOFFER_DOES_NOT_EXIST",
-        doc: "Address does not have an offer of this type to redeem.",
       },
     },
     "0x1::option": {
@@ -297,11 +335,6 @@ export const errmap = {
     "0x1::resource_account": {
       "0": {
         name: "ECONTAINER_NOT_PUBLISHED",
-      },
-    },
-    "0x1::role": {
-      "0": {
-        name: "EROLE",
       },
     },
     "0x1::simple_map": {
@@ -428,18 +461,6 @@ export const errmap = {
         name: "ENOT_EMPTY",
       },
     },
-    "0x1::test_coin": {
-      "1": {
-        name: "ENO_CAPABILITIES",
-        doc: "Error codes",
-      },
-      "2": {
-        name: "EALREADY_DELEGATED",
-      },
-      "3": {
-        name: "EDELEGATION_NOT_FOUND",
-      },
-    },
     "0x1::timestamp": {
       "0": {
         name: "ENOT_GENESIS",
@@ -509,29 +530,6 @@ export const errmap = {
         name: "ECONFIG",
       },
     },
-    "0x1::vault": {
-      "0": {
-        name: "EVAULT",
-      },
-      "1": {
-        name: "EDELEGATE",
-      },
-      "2": {
-        name: "EACCESSOR_IN_USE",
-      },
-      "3": {
-        name: "EACCESSOR_INCONSISTENCY",
-      },
-      "4": {
-        name: "EDELEGATE_TO_SELF",
-      },
-      "5": {
-        name: "EDELEGATION_NOT_ENABLED",
-      },
-      "6": {
-        name: "EEVENT",
-      },
-    },
     "0x1::vector": {
       "131072": {
         name: "EINDEX_OUT_OF_BOUNDS",
@@ -569,6 +567,9 @@ export const errmap = {
       "3": {
         name: "EPROPOSAL_ALREADY_RESOLVED",
       },
+      "4": {
+        name: "EPROPOSAL_EMPTY_EXECUTION_HASH",
+      },
     },
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mint_wrapper":
       {
@@ -583,6 +584,32 @@ export const errmap = {
         "3": {
           name: "EINSUFFICIENT_ALLOWANCE",
           doc: "Allowance exceeded.",
+        },
+      },
+    "0xf79945b8d98af4d50f1d9c84a27362d032e48c2c17a3f24e3c81cf4a2a0e06c0::inbox":
+      {
+        "1": {
+          name: "ETRANSFER_NOT_PUBLISHED",
+          doc: "No pending transfer was found with this id.",
+        },
+        "2": {
+          name: "ECANNOT_REFUND_NOT_CREATOR",
+          doc: "Only the creator of a transfer may refund it.",
+        },
+        "3": {
+          name: "EREFUND_DEADLINE_NOT_MET",
+          doc: "Not enough time has passed since creating this transfer.",
+        },
+      },
+    "0xf79945b8d98af4d50f1d9c84a27362d032e48c2c17a3f24e3c81cf4a2a0e06c0::inbox_signer":
+      {
+        "1": {
+          name: "ENOT_SELF",
+          doc: "Must sign as the module.",
+        },
+        "2": {
+          name: "ESELF_ALREADY_PUBLISHED",
+          doc: "Module has already been initialized.",
         },
       },
   },

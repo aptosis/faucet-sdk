@@ -33,10 +33,6 @@ export type AcceptMinterArgs = {
 
 /** Payload arguments for {@link entry.accept_owner}. */
 export type AcceptOwnerArgs = {
-  args: {
-    /** IDL type: `Address` */
-    base: p.RawAddress;
-  };
   typeArgs: {
     CoinType: string;
   };
@@ -122,12 +118,7 @@ export const functions = {
     name: "accept_owner",
     doc: "Accepts the owner.",
     ty_args: ["CoinType"],
-    args: [
-      {
-        name: "base",
-        ty: "address",
-      },
-    ],
+    args: [],
   },
   create_with_coin: {
     name: "create_with_coin",

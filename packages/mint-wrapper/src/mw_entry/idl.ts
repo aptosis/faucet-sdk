@@ -28,7 +28,7 @@ export const idl = {
       name: "accept_owner",
       doc: "Accepts the owner.",
       ty_args: ["CoinType"],
-      args: [{ name: "base", ty: "address" }],
+      args: [],
     },
     {
       name: "create_with_coin",

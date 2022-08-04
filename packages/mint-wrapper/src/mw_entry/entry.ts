@@ -33,14 +33,13 @@ export const accept_minter = ({
 
 /** Accepts the owner. */
 export const accept_owner = ({
-  args,
   typeArgs,
 }: mod.AcceptOwnerArgs): payloads.AcceptOwner => ({
   type: "script_function_payload",
   function:
     "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::accept_owner",
   type_arguments: [typeArgs.CoinType],
-  arguments: [p.serializers.hexString(args.base)],
+  arguments: [],
 });
 
 /**

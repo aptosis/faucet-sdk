@@ -36,7 +36,7 @@ export type AcceptMinter = {
 export type AcceptOwner = {
   readonly type: "script_function_payload";
   readonly function: "0x8f6ce396d6c4b9c7c992f018e94df010ec5c50835d1c83186c023bfa22df638c::mw_entry::accept_owner";
-  readonly arguments: [base: string];
+  readonly arguments: [];
   readonly type_arguments: [CoinType: string];
 };
 
